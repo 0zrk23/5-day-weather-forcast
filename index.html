@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>5 Day Weather Forcast</title>
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/061b39e95e1a0bd25e8d294af8596b2a?family=Font+Awesome+5+Free" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <nav class="bg-primary">
+      <div class="mx-auto  px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="flex flex-shrink-0 items-center">
+              <img class="block h-8 w-auto lg:hidden" src="./assets/images/five-day-logo.png" alt="Your Company">
+              <img class="hidden h-8 w-auto lg:block" src="./assets/images/five-day-logo.png" alt="Your Company">
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="flex flex-col lg:flex-row h-screen mx-1">
+      <!-- Search Bar -->
+      <div class="lg:w-1/4 h-max flex flex-col justify-center">
+        <h2 class="text-2xl flex pl-4 text-secondary font-bold">Search</h2>
+        <form class="search-form w-full flex flex-col">
+          <input type="text" class="search-input mt-1 text-color_5 font-medium text-lg mx-3 px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-tertiary"/>
+          <button class="search-btn h-10 mt-2 mx-2 rounded-md block opacity-75 hover:opacity-100 shadow-md shadow-gray-500 bg-secondary text-primary">Search</button>
+        </form>
+        <hr class="h-px my-6 bg-gray-200 border-0 dark:bg-gray-700">
+        <div class="history-container h-max flex flex-col justify-center search-history">
+          <!-- <button class="h-10 my-2 mx-2 rounded-md block opacity-75 hover:opacity-100 shadow-md shadow-gray-500 bg-secondary text-primary">City 1</button>
+          <button class="h-10 my-2 mx-2 rounded-md block opacity-75 hover:opacity-100 shadow-md shadow-gray-500 bg-secondary text-primary">City 2</button>
+          <button class="h-10 my-2 mx-2 rounded-md block opacity-75 hover:opacity-100 shadow-md shadow-gray-500 bg-secondary text-primary">City 3</button>
+          <button class="h-10 my-2 mx-2 rounded-md block opacity-75 hover:opacity-100 shadow-md shadow-gray-500 bg-secondary text-primary">City 4</button>
+          <button class="h-10 my-2 mx-2 rounded-md block opacity-75 hover:opacity-100 shadow-md shadow-gray-500 bg-secondary text-primary">City 5</button> -->
+          </div>
+      </div>
+      <!-- Info Bar -->
+      <div class="lg:w-3/4 h-full h-max flex flex-col mx-1">
+        <card class="current-weather card my-2 bg-tertiary bg-opacity-50">
+          <!-- <h3 class="text-2xl font-bold text-color_5 my-2">New York City (3/12/2023)</h3>
+          <p class="text-lg text-color_4">Temp: 72&degF</p>
+          <p class="text-lg text-color_4">Wind 8.43 MPH</p>
+          <p class="text-lg text-color_4">Humidity: 44 %</p> -->
+        </card>
+        <div class="forcast grid sm:grid-cols-3 xl:grid-cols-5">
+          <!-- <card class="card my-2 mr-2 bg-color_5 bg-opacity-50">
+            <h3 class="text-2xl font-bold text-color_5 my-2 ">3/12/2023</h3>
+            <p class="text-lg text-color_4">Temp: 72&degF</p>
+            <p class="text-lg text-color_4">Wind 8.43 MPH</p>
+            <p class="text-lg text-color_4">Humidity: 44 %</p>
+          </card>
+          <card class="card my-2 mx-2 bg-color_5 bg-opacity-50">
+            <h3 class="text-2xl font-bold text-color_5 my-2">3/12/2023</h3>
+            <p class="text-lg text-color_4">Temp: 72&degF</p>
+            <p class="text-lg text-color_4">Wind 8.43 MPH</p>
+            <p class="text-lg text-color_4">Humidity: 44 %</p>
+          </card>
+          <card class="card my-2 mx-2 bg-color_5 bg-opacity-50">
+            <h3 class="text-2xl font-bold text-color_5 my-2">3/12/2023</h3>
+            <p class="text-lg text-color_4">Temp: 72&degF</p>
+            <p class="text-lg text-color_4">Wind 8.43 MPH</p>
+            <p class="text-lg text-color_4">Humidity: 44 %</p>
+          </card>
+          <card class="card my-2 mx-2 bg-color_5 bg-opacity-50">
+            <h3 class="text-2xl font-bold text-color_5 my-2">3/12/2023</h3>
+            <p class="text-lg text-color_4">Temp: 72&degF</p>
+            <p class="text-lg text-color_4">Wind 8.43 MPH</p>
+            <p class="text-lg text-color_4">Humidity: 44 %</p>
+          </card>
+          <card class="card my-2 ml-2 bg-color_5 bg-opacity-50">
+            <h3 class="text-2xl font-bold text-color_5 my-2">3/12/2023</h3>
+            <p class="text-lg text-color_4">Temp: 72&degF</p>
+            <p class="text-lg text-color_4">Wind 8.43 MPH</p>
+            <p class="text-lg text-color_4">Humidity: 44 %</p>
+          </card> -->
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
