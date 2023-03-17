@@ -90,7 +90,7 @@ async function historyButtonHandler(event){
 async function fetchAndRenderCityWeather(cityName){
     const response =  {
         current: await (await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=imperial&appid=1172f50f33af35d90f024835c8e64a34`)).json(),
-        forcast: await (await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=imperial&appid=1172f50f33af35d90f024835c8e64a34`)).json()
+        forcast: await (await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=imperial&appid=1172f50f33af35d90f024835c8e64a34`)).json()
     } 
     if(response.current.cod !== 200){
         alert(response.current.message);
